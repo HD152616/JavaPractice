@@ -55,24 +55,4 @@ public class Car3 {
 	{
 		return price;
 	}
-	public void setCompany(String newCompany)
-	{
-		company = newCompany;
-	}
-	public void setModel(String newModel)
-	{
-		model = newModel;
-	}
-	public void setColor(String newColor)
-	{
-		color = newColor;
-	}
-	public void setMaxSpeed(int newMaxSpeed)
-	{
-		maxSpeed = newMaxSpeed;
-	}
-	public void setPrice(int newPrice)
-	{
-		price =newPrice;
-	}
 }

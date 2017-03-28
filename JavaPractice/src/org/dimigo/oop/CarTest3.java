@@ -27,7 +27,7 @@ public class CarTest3 {
 		System.out.println("제조사명 : "+car.getCompany());
 		System.out.println("모델명 : "+car.getModel());
 		System.out.println("색상 : "+ car.getColor());
-		System.out.println("최대속도 : "+car.getMaxSpeed()+"km");
+		System.out.println("최대속도 : "+car.getMaxSpeed()+"km" );
 		System.out.println("가격 : " + String.format("%,d", car.getPrice())+"원\n");
 
 		System.out.println("제조사명 : "+car2.getCompany());
