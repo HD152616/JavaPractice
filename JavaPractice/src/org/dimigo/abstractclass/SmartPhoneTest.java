@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.dimigo.inheritance;
+package org.dimigo.abstractclass;
 
 /**
  * <pre>
@@ -25,7 +25,7 @@ public class SmartPhoneTest {
 			System.out.println(i);
 			i.turnOn();
 			i.pay();
-			i.useSpecialFunction(i);
+			i.useSpecialFunction();
 			i.turnOff();
 		}
 	}
