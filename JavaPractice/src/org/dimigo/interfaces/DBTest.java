@@ -17,9 +17,9 @@ public class DBTest {
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 
 		System.out.println("< 변경 전 >");
-		crub(IDBManager.getDBObject("SybaseDB"));
+		crub(IDBManager.getDBObject(IDBManager.SYBASE_DATABASE));
 		System.out.println("\n< 변경 후 >");
-		crub(IDBManager.getDBObject("OracleDB"));
+		crub(IDBManager.getDBObject(IDBManager.ORACLE_DATABASE));
 
 	}
 	private static void crub(IDBManager db)

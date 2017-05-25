@@ -14,17 +14,24 @@ package org.dimigo.interfaces;
  * @version		: 1.0
  */
 public interface IDBManager {
-	public static final String ORAVLE_DATABASE = "ORACLE";
+	public static final String ORACLE_DATABASE = "ORACLE";
 	public static final String SYBASE_DATABASE = "SYBACE";
 	public void insert();
 	public void search();
 	public void update();
 	public void delete();
-	public static IDBManager getDBObject(String database) throws ClassNotFoundException, InstantiationException, IllegalAccessException
+	public static IDBManager getDBObject(String database)
 	{
-		Class a = Class.forName("org.dimigo.interfaces."+database);
-		IDBManager c = (IDBManager)a.newInstance();
-		return c;
+		if(database == ORACLE_DATABASE)
+		{
+			return new OracleDB();
+		}
+		else if(database == SYBASE_DATABASE)
+		{
+			return new SybaseDB();
+		}
+		
+		return null;
 	}
 
 }
