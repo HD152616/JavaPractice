@@ -22,11 +22,11 @@ public interface IDBManager {
 	public void delete();
 	public static IDBManager getDBObject(String database)
 	{
-		if(database == ORACLE_DATABASE)
+		if(database.equals(ORACLE_DATABASE))
 		{
 			return new OracleDB();
 		}
-		else if(database == SYBASE_DATABASE)
+		else if(database.equals(SYBASE_DATABASE))
 		{
 			return new SybaseDB();
 		}
